@@ -12,7 +12,7 @@ jobs:
           repository: andrenatal/bergamot-translator-from
       - name: Reset the default branch with upstream changes
         run: |
-          git remote add upstream https://github.com/andrenatal-bot/repo.git
+          git remote add upstream https://github.com/andrenatal-bot/bergamot-translator-from.git
           git fetch upstream master:upstream-master
           git reset --hard upstream-master
       - name: Create Pull Request
