@@ -13,8 +13,8 @@ jobs:
       - name: Reset the default branch with upstream changes
         run: |
           git remote add upstream https://github.com/andrenatal-bot/bergamot-translator-from.git
-          git fetch upstream master:upstream-master
-          git reset --hard upstream-master
+          git fetch upstream main:upstream-main
+          git reset --hard upstream-main
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v3
         with:
