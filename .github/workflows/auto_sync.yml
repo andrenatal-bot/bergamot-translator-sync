@@ -1,7 +1,8 @@
 name: Update fork
 on:
-  schedule:
-    - cron:  '*/6 * * * *'
+  push:
+    branches:
+      - main
 jobs:
   updateFork:
     runs-on: ubuntu-latest
